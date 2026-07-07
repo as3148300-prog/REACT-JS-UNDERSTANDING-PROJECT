@@ -47,7 +47,7 @@ const handleclick =(index)=>{
 }
    return (
      <div className='h-screen w-screen bg-[#111]'>
-       <Navbar/>
+       <Navbar data = {musicdata}/>
       <div className='p-10 flex  gap-10 flex-wrap'>
    {musicdata.map((items , index)=>{
      return <Cards click = {handleclick} data = {items} index = {index} key = {index}  />
